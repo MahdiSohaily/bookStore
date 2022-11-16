@@ -8,11 +8,7 @@ const ACTIONS = {
 // it's key and the value is an specific function
 const cases = {
   [ACTIONS.ADDED_BOOK]: (state, action) => [...state, action.payload],
-  [ACTIONS.REMOVED_BOOK]: (state, action) => {
-    let newState = [...state];
-    newState = newState.splice(action.index, 1);
-    return [...newState];
-  },
+  [ACTIONS.REMOVED_BOOK]: (state, action) => state.filter((item) => (item.id !== action.index)),
 };
 
 const initialState = [
