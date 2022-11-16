@@ -13,7 +13,7 @@ export default function BookList() {
       style={{ border: '1px solid gray', padding: '40px', margin: '20px' }}
     >
       <Book id={item.id} title={item.title} author={item.author} />
-      <Actions />
+      <Actions id={item.id} />
     </div>
   ));
   return (
