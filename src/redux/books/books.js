@@ -7,10 +7,7 @@ const ACTIONS = {
 // an object contains Different types of action as
 // it's key and the value is an specific function
 const cases = {
-  [ACTIONS.ADDED_BOOK]: (state, action) => {
-    console.log(action.payload);
-    return [...state, action.payload];
-  },
+  [ACTIONS.ADDED_BOOK]: (state, action) => [...state, action.payload],
   [ACTIONS.REMOVED_BOOK]: (state, action) => {
     let newState = [...state];
     newState = newState.splice(action.index, 1);
@@ -29,16 +26,12 @@ export default function bookReducer(state = initialState, action) {
   return handler ? handler(state, action) : state;
 }
 
-export const addBook = (book) => {
-  return {
-    type: ACTIONS.ADDED_BOOK,
-    payload: book,
-  };
-};
+export const addBook = (book) => ({
+  type: ACTIONS.ADDED_BOOK,
+  payload: book,
+});
 
-export const removeBook = (index) => {
-  return {
-    type: ACTIONS.REMOVED_BOOK,
-    index,
-  };
-};
+export const removeBook = (index) => ({
+  type: ACTIONS.REMOVED_BOOK,
+  index,
+});
