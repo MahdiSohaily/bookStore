@@ -28,7 +28,7 @@ export default function InputBook() {
       ...data,
     };
 
-    console.log(book);
+    dispatch(addBook(book));
   }
 
   return (
