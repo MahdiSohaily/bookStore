@@ -29,3 +29,36 @@ body {
   background-color: white;
   border-radius: 3px;
 }
+
+section {
+  padding: 3vw;
+}
+
+header {
+  padding: 1vw 3vw 1vw 3vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--gray1);
+  background-color: white;
+}
+
+header > nav {
+  display: flex;
+}
+
+header > nav > h1 {
+  color: var(--blue);
+}
+
+header > nav > ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 20px;
+}
+
+header > nav > ul a {
+  text-decoration: none;
+  color: var(--darkGray);
+}
