@@ -1,4 +1,4 @@
-# JS-capstone
+# React- Bookstore
 
 ## Table of contents
 
