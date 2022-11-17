@@ -8,6 +8,9 @@ import Books from './pages/Books';
 import Categories from './pages/Categories';
 import NoPage from './pages/NoPage';
 import './styles/index.css';
+import { fetchBooks } from './redux/books/books';
+
+store.dispatch(fetchBooks);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
