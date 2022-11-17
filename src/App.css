@@ -112,7 +112,11 @@ header > nav > ul a {
 }
 
 .progressContainer {
-  width: 100px;
+  width: 100px !important;
+}
+
+.CircularProgressbar {
+  width: 100px !important;
 }
 
 .bookActions {
