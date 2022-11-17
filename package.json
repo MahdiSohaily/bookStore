@@ -19,7 +19,8 @@
     "redux-thunk": "^2.4.2",
     "uuid": "^9.0.0",
     "uuidv4": "^6.2.13",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "@testing-library/jest-dom": "^5.16.5"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -50,7 +51,6 @@
     "@babel/eslint-parser": "^7.19.1",
     "@babel/plugin-syntax-jsx": "^7.18.6",
     "@babel/preset-react": "^7.18.6",
-    "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "eslint": "^7.32.0",
     "eslint-config-airbnb": "^18.2.1",

@@ -8,7 +8,7 @@ const BookList = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getBookAsync());
-  }, []);
+  }, [dispatch]);
 
   return (
     <ul id="bookList">
