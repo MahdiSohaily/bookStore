@@ -1,68 +1,62 @@
-# JS-capstone
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-## Table of contents
+# Bookstore CRM
 
-- [Overview](#overview)
-  - [Links](#links)
-- [Project Setup](#Setup-Project)
-  - [commands](#command)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
+> The Bookstore is a website similar to the "Awesome Books" with following capabilities:
 
-## Overview
+ - Display a list of books.
+ - Add a book.
+ - Remove a selected book.
 
-This is a simple book store project with the following functionalities:
-
-- Connections to external APIs
-- Testing program functionalities using Jest
-- Displaying some Books in to the UI
-- Added like and Comment features to the App
-- Displaying the number of likes and comments for each book
-
-### Prerequisites
-
-For this project you must have node.js installed.
-
-### Setup Project
-
-In order to run this project locally in your machine follow the following steps:
-### command
-```
-git clone https://github.com/MahdiSohaily/bookStore.git
-cd bookStore
-npm install
-npm start
-```
-
-## My process
 
 ## Built With
 
+- React
+- JSX
+- JavaScript
+- ES6
 - HTML5
 - CSS3
-- Purge CSS
-- Flexbox
-- CSS Grid
-- React
-- Redux
-- Axios
+- Webpack
 
-### Author
+## Live Demo
 
-👤 **Mahdi Rezaei**
+[Live Demo Link](https://livedemo.com)
 
-- Frontend Mentor - [@MahdiSohaily](https://www.frontendmentor.io/profile/MahdiSohaily)
-- Twitter - [@Mahdi_Rezaei_AF](https://twitter.com/Mahdi_Rezaei_AF)
-- linkedIn - [@Mahdi-rezaei](https://www.linkedin.com/in/mahdi-rezaei-74705713b)
+## How to use
+
+In order to run this project locally enter the following commands in a command line tool
+
+```
+git clone https://github.com/MahdiAghaali/book-store/
+cd book-store
+npm install
+npm run build
+npm run start
+```
+## Authors
+
+👤 **Mahdi Aghaali**
+
+- GitHub: [@MahdiAghaali](https://github.com/MahdiAghaali)
+- Twitter: [@Mohi_Aghaali](https://twitter.com/Mohi_Aghaali)
+- LinkedIn: [mahdi-aghaali](https://www.linkedin.com/in/mahdi-aghaali/)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/MahdiSohaily/JS-capstone/issues).
+Feel free to check the [issues page](https://github.com/MahdiAghaali/book-store/issues).
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+
+## 📝 License
+
+This project is [MIT](./LICENSE) licensed.

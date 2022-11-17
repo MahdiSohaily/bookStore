@@ -1,17 +1,12 @@
-import { createStore, combineReducers, applyMiddleware } from 'redux';
-import { composeWithDevTools } from 'redux-devtools-extension';
-import thunk from 'redux-thunk';
+import { configureStore } from '@reduxjs/toolkit';
 import bookReducer from './books/books';
 import categoriesReducer from './categories/categories';
 
-const composeEnhancers = composeWithDevTools(applyMiddleware(thunk));
-
-const store = createStore(
-  combineReducers({
-    books: bookReducer,
-    categories: categoriesReducer,
-  }),
-  composeEnhancers,
-);
+const store = configureStore({
+  reducer: {
+    bookReducer,
+    categoriesReducer,
+  },
+});
 
 export default store;

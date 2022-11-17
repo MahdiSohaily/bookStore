@@ -1,19 +1,13 @@
-// App Actions to update state
-const CHECK_STATUS = 'bookStore/categories/CHECK_STATUS';
+const CHECK_STATUS = 'book-store/categories/CHECK_STATUS';
 
-// an object contains Different types of action as
-// it's key and the value is an specific function
-const cases = {
-  [CHECK_STATUS]: (state, action) => [...state, action.payload],
-};
-
-// Books reducer function
 export default function categoriesReducer(state = [], action) {
-  const handler = cases[action.type];
-  return handler ? handler(state, action) : state;
+  switch (action.type) {
+    case CHECK_STATUS: return action.payload;
+    default: return state;
+  }
 }
 
-export const checkStatus = (text) => ({
+export const checkStatus = () => ({
   type: CHECK_STATUS,
-  payload: text,
+  payload: 'Under construction',
 });
