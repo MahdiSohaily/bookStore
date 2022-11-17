@@ -6,7 +6,7 @@ const store = createStore(
   combineReducers({
     books: bookReducer,
     categories: categoriesReducer,
-  })
+  }),
 );
 
 export default store;
