@@ -110,3 +110,58 @@ header > nav > ul a {
 .book .bookAuthor {
   color: var(--blue);
 }
+
+.progressContainer {
+  width: 100px;
+}
+
+.bookActions {
+  margin: 5px 0 5px 0;
+  display: flex;
+  gap: 5px;
+}
+
+.verticalLine {
+  border-left: 1px solid var(--gray1);
+  height: 20px;
+}
+
+.verticalLine.big {
+  height: 100px;
+}
+
+.infoContainer {
+  display: flex;
+  width: 40%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+form button,
+section > button {
+  background-color: var(--blue);
+  color: white;
+  border: none;
+  width: 300px;
+  font-size: 1.2rem;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.infoContainer button {
+  background-color: var(--blue);
+  color: white;
+  border: none;
+  font-size: 1rem;
+  padding: 5px 20px 5px 20px;
+  border-radius: 5px;
+  font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+.chapterInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+}
