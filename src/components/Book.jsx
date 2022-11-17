@@ -13,6 +13,6 @@ export default function Book({ id, title, author }) {
 
 Book.propTypes = {
   id: PropTypes.number.isRequired,
-  title: PropTypes.number.isRequired,
-  author: PropTypes.number.isRequired,
+  title: PropTypes.string.isRequired,
+  author: PropTypes.string.isRequired,
 };

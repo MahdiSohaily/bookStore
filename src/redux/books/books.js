@@ -12,8 +12,8 @@ const cases = {
 };
 
 const initialState = [
-  { id: 1, title: 'Awesome Book', Author: 'Mahdi Rezaei' },
-  { id: 2, title: 'New Book', Author: 'Jafar Rezaei' },
+  { id: 1, title: 'Awesome Book', author: 'Mahdi Rezaei' },
+  { id: 2, title: 'New Book', author: 'Jafar Rezaei' },
 ];
 
 // Books reducer function
