@@ -62,3 +62,51 @@ header > nav > ul a {
   text-decoration: none;
   color: var(--darkGray);
 }
+
+#userAccount {
+  width: 50px;
+  height: 50px;
+  border: 1px solid var(--gray1);
+  color: var(--blue);
+  text-align: center;
+  line-height: 48px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#bookList {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.book {
+  border: 1px solid var(--gray1);
+  background-color: white;
+  border-radius: 7px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+}
+
+.book > .bookInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.book .bookCategory {
+  color: var(--darkGray);
+}
+
+.book .bookTitle {
+  font-size: 2rem;
+}
+
+.book .bookAuthor {
+  color: var(--blue);
+}
