@@ -6,7 +6,7 @@ export default function Navbar() {
     <>
       <nav className="navBar">
         <p className="logo">Book Store</p>
-        <ul className={'menuNav'}>
+        <ul className="menuNav">
           <li>
             <NavLink to="/">Books</NavLink>
           </li>
