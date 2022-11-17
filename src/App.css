@@ -165,3 +165,29 @@ section > button {
   gap: 10px;
   font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
 }
+
+form {
+  color: var(--darkGray);
+}
+
+form > .inputContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+form input {
+  font-size: 1.3rem;
+  padding: 15px;
+  border: 1px solid var(--gray1);
+  width: 100%;
+  border-radius: 5px;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--darkGray);
+  opacity: 1;
+
+  /* Firefox */
+}
