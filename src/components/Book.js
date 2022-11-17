@@ -6,7 +6,9 @@ import { removeBookAsync } from '../redux/books/books';
 import 'react-circular-progressbar/dist/styles.css';
 
 const Book = (props) => {
-  const { id, title, author, category } = props;
+  const {
+    id, title, author, category,
+  } = props;
   const dispatch = useDispatch();
   const progress = parseInt(Math.random() * 100, 10);
   return (
