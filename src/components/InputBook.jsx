@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { addBook } from '../redux/books/books';
 import { useSelector, useDispatch } from 'react-redux';
+import { addBook } from '../redux/books/books';
 
 export default function InputBook() {
   const length = useSelector((state) => state.books.length);
@@ -11,7 +11,7 @@ export default function InputBook() {
     author: '',
   });
 
-  //function to handle input values and change their state
+  // function to handle input values and change their state
   function handleChange(e) {
     const { target } = e;
     setData({

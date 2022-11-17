@@ -1,8 +1,8 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import Book from './Book';
 import InputBook from './InputBook';
 import Actions from './Actions';
-import { useSelector } from 'react-redux';
 
 export default function BookList() {
   const books = useSelector((state) => state.books);
@@ -18,7 +18,10 @@ export default function BookList() {
   ));
   return (
     <div className="wraper">
-      <div> {booksList}</div>
+      <div>
+        {' '}
+        {booksList}
+      </div>
       <div className="book_form">
         <InputBook />
       </div>
