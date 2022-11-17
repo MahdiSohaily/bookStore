@@ -6,9 +6,7 @@ import { removeBookAsync } from '../redux/books/books';
 import 'react-circular-progressbar/dist/styles.css';
 
 const Book = (props) => {
-  const {
-    id, title, author, category,
-  } = props;
+  const { id, title, author, category } = props;
   const dispatch = useDispatch();
   const progress = parseInt(Math.random() * 100, 10);
   return (
@@ -32,11 +30,11 @@ const Book = (props) => {
           <button type="button">Edit</button>
         </div>
       </div>
+      <div className="progressContainer">
+        <CircularProgressbar value={progress} text={`${progress}%`} />
+      </div>
       <div className="infoContainer">
-        <div className="progressContainer" />
-        <div className="verticalLine big">
-          <CircularProgressbar value={progress} text={`${progress}%`} />
-        </div>
+        <div className="verticalLine big" />
         <div className="chapterInfo">
           <div className="currenChapter">chapter info</div>
           <div>introduction</div>
