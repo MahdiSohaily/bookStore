@@ -3,7 +3,7 @@ import { createAsyncThunk } from '@reduxjs/toolkit';
 const ADD_BOOK = 'book-store/books/ADD_BOOK';
 const GET_BOOK = 'book-store/books/GET_BOOK';
 const REMOVE_BOOK = 'book-store/books/REMOVE_BOOK';
-const baseUrl = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/wFyRQkqy7Ko6BjeqyGdg/books/';
+const baseUrl = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/vOSPgS2ScVjdmjkxsYg5/books/';
 
 export default function bookReducer(state = [], action) {
   switch (action.type) {
