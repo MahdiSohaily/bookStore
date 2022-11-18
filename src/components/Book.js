@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
+import { CircularProgressbar } from 'react-circular-progressbar';
 import { removeBookAsync } from '../redux/books/books';
 import 'react-circular-progressbar/dist/styles.css';
 
@@ -9,6 +10,7 @@ const Book = (props) => {
     id, title, author, category,
   } = props;
   const dispatch = useDispatch();
+  const progress = parseInt(Math.random() * 100, 10);
   return (
     <div className="book" id={id}>
       <div className="bookInfo">
@@ -18,24 +20,27 @@ const Book = (props) => {
         <div className="bookActions">
           <button type="button">Comments</button>
           <div className="verticalLine" />
-          <button type="button" onClick={() => { dispatch(removeBookAsync(id)); }}>Remove</button>
+          <button
+            type="button"
+            onClick={() => {
+              dispatch(removeBookAsync(id));
+            }}
+          >
+            Remove
+          </button>
           <div className="verticalLine" />
           <button type="button">Edit</button>
         </div>
       </div>
+      <div className="progressContainer">
+        <CircularProgressbar value={progress} text={`${progress}%`} />
+      </div>
       <div className="infoContainer">
-        <div className="progressContainer" />
         <div className="verticalLine big" />
         <div className="chapterInfo">
-          <div className="currenChapter">
-            chapter info
-          </div>
-          <div>
-            introduction
-          </div>
-          <button type="button">
-            Update progress
-          </button>
+          <div className="currenChapter">chapter info</div>
+          <div>introduction</div>
+          <button type="button">Update progress</button>
         </div>
       </div>
     </div>

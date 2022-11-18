@@ -21,10 +21,15 @@ const NewBook = () => {
             if (title !== '' && author !== '') {
               const key = uuidv4();
               const book = {
-                item_id: key, title, author, category,
+                item_id: key,
+                title,
+                author,
+                category,
               };
               dispatch(addBookAsync(book));
             }
+            document.getElementById('bookTitleInput').value = '';
+            document.getElementById('bookAuthorInput').value = '';
           }}
         >
           Add Book
